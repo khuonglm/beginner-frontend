@@ -3,16 +3,25 @@
     <head>
         <title>My Profile</title>
         <meta charset="UTF-8"/> <!-- hỗ trợ gõ tiếng việt -->
+        <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Sofia">
         <style> 
                 body {
                     margin: 0;
                     padding: 0;
                 }
 
+                img {
+                    border-radius: 8px;
+                }
+
+                img:hover {
+                   box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
+                }
+
                #header {
                      width: 100%;
-                     height: 300px;
-                     background-image: url(./dyFcCsJ.png);
+                     height: 450px;
+                     background-image: url(https://bom.to/OKfRsG);
                      background-repeat: no-repeat;
                      background-position: center;
                }
@@ -52,6 +61,23 @@
                    display: flex;
                }
 
+               .new-font {
+                   font-family: Sofia;
+               }
+
+               .button {
+                    background-color: gray;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+
         </style>
     </head>
 
@@ -59,10 +85,10 @@
         <div id = "header"></div>
         <div id = "body" class = "section">
             <div class = "body-box">
-                <img width = "400" height = "500" src = "./irene.jpg" alt = "Irene image"/>
+                <img width = "400" height = "500" src = "https://bom.to/SZhzrw" alt = "Irene image"/>
                 <div style="margin-left: 30px;"> 
-                    <h1 class = "body-name"> MY PROFILE</h1>
-                    <h3 class = "body-name"> Tên: Lê Mạnh Khương</h3>
+                    <h1 style = "text-shadow: 2px 2px 5px green; font-size: 30px;"> MY PROFILE</h1>
+                    <h3 class = "body-name" style = "text-decoration: underline;"> Tên: Lê Mạnh Khương</h3>
                     <p> Ngày sinh: 26/11/2002</p>
                     <p class = "body-uni"> Trường: THPT Chuyên ĐHSP Hà Nội</p>
                     <address> <b>
@@ -83,13 +109,16 @@
                             <li>Python</li>
                             <li>C++</li>
                         </b></ul>
-                    <div class = "body-title">Các thông tin khác trên mạng</div>
-                        <a href = "https://www.facebook.com/khuongle.LuckyAurora/" style = "color:red">Facebook</a>
-                        <br>
-                        <a href = "http://codeforces.com/profile/LuckyAurora" style = "color:green">Codeforces</a>
-                        <br>
-                        <a href = "https://github.com/LuckyAurora" style = "color:yellow">Github</a>
-                        <br> 
+                    <div class = "body-box">Các thông tin khác trên mạng</div>
+                        <div>
+                             <a target = "_blank" href = "https://www.facebook.com/khuongle.LuckyAurora/" class = "button" style = "color:red">Facebook</a>
+                        </div>
+                        <div> 
+                             <a target = "_blank" href = "http://codeforces.com/profile/LuckyAurora" class = "button" style = "color:green">Codeforces</a>
+                        </div>
+                        <div> 
+                             <a target = "_blank" href = "https://github.com/LuckyAurora" class = "button" style = "color:yellow">Github</a>
+                        </div>
                 </div>
             </div>
         </div>
