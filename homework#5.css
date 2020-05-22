@@ -1,0 +1,52 @@
+* {
+    font-family: consolas;
+}
+#my-background {
+    background-image: url("contact_us.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+}
+
+.flex-container {
+    display: flex;
+    text-align: left;
+    margin: 5px 160px 5px 160px;
+}
+
+#child-1 {
+    flex-grow: 6;
+    min-width: 0;
+}
+
+#child-2 {
+    flex-grow: 4;
+    background-color: lightgray;
+    padding: 2px;
+    min-width: 0;
+}
+
+#child-2 .type-text {
+    display: initial;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#child-1 .type-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+input {
+    width: 300px;
+    height: 35px;
+    margin: 5px 0px 5px 0px;
+}
+
+button {
+    background-color: olivedrab;
+    height: 35px;
+    width: 100px;
+}
