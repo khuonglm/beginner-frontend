@@ -36,7 +36,18 @@
 #child-1 .type-text {
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;
+    white-space: normal;
+}
+
+.child-3 {
+     flex-grow: 3;
+     min-width: 0;
+}
+
+.child-3 .type-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: normal;
 }
 
 input {
